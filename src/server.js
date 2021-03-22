@@ -1,6 +1,7 @@
 const express = require('express');
 const exphbs =require('express-handlebars');
 const path = require('path');
+const morgan = require('morgan');
 
 //Inicializaciones
 
@@ -21,16 +22,16 @@ app.set('view engine','.hbs');
 
 //Middelwares
 
+app.use(morgan('dev'));
+
 app.use(express.urlencoded({extended: false})); // pasar datos recibidos a json
 
 //Variables Globales
 
 //Rutas
+app.use(require('./routes/index.routes'));
+app.use(require('./routes/notes.routes'));
 
-app.get('/',(req,res)=>{
-    //res.send('hello world');
-    res.render('index');
-});
 
 // Archivos estaticos
 
