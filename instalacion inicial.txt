@@ -5,4 +5,9 @@ npm i bcryptjs
 npm i express-handlebars
 npm i express-session
 npm i method-override
-npm i
+npm i mongoose
+npm i passport
+npm i passport-local
+npm i dotenv nodemon handlebars npm-check-updates -D 
+
+mkdir config controllers helpers models public routes views
