@@ -1,0 +1,8 @@
+npm init -y
+npm i express
+npm i connect-flash
+npm i bcryptjs
+npm i express-handlebars
+npm i express-session
+npm i method-override
+npm i
